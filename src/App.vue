@@ -46,14 +46,10 @@ const guardarPaciente = () => {
 
 const actualizarPaciente = (id) =>{
   const pacientesEditar = pacientes.value.filter( paciente => paciente.id === id)[0]
-  console.log(pacientes);
   Object.assign(paciente, pacientesEditar)
 }
 const eliminarPaciente = (id) =>{
   pacientes.value = pacientes.value.filter( paciente => paciente.id !== id)
-  console.log(pacientes.value.filter( paciente => paciente.id !== id));
-  console.log(pacientes.value.filter( paciente => paciente.id === id));
-
 }
 </script>
 
